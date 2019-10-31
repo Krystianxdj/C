@@ -1,8 +1,10 @@
 #include <stdio.h>
 
-void Display(int Option);
 int Opcja1 = 1;
 int Opcja2 = 2;
+
+int Display(int Option);
+
 
 
 int main(void) {
@@ -15,11 +17,11 @@ int main(void) {
 
 
 
-void Display(int Option)
+int Display(int Option)
 {
   if(Opcja1 == Option)
   {
-    printf("opcja 1a");
+    printf("Wybrano opcje nr.1");
   }
   else if(Opcja2 == Option)
   {
@@ -29,4 +31,6 @@ void Display(int Option)
   {
 
   }
+
+  return 0;
 }
