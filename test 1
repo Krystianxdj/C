@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+void Display(int Option);
+int Opcja1 = 1;
+int Opcja2 = 2;
+
+
+int main(void) {
+  
+  Display(Opcja1);
+  
+
+
+}
+
+
+
+void Display(int Option)
+{
+  if(Opcja1 == Option)
+  {
+    printf("opcja 1a");
+  }
+  else if(Opcja2 == Option)
+  {
+    printf("opcja 2b");
+  }
+  else
+  {
+
+  }
+}
