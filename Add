@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int add(int x, int y)
+{
+    int z = x+y;
+    
+    return z+2;
+}
+
+int main()
+{
+    int out = add(5,3);
+    printf("%d", out);
+}
