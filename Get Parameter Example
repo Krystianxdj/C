@@ -1,0 +1,52 @@
+#include <stdio.h>
+
+int par = 0;
+
+int Get_Parameter(int x, int y);
+int parameter[6][3];
+
+#define Parameter_1      0u
+#define Parameter_2      1u
+#define Parameter_3      2u
+#define Parameter_4      3u
+#define Parameter_5      4u
+#define Parameter_6      5u
+
+#define Min      0u
+#define Max      1u
+#define Default  2u
+
+
+
+int main() {
+    
+    par = Get_Parameter(Parameter_5, Max);
+    
+    
+    printf("Hello, world!\n");
+    printf("wybrany parametr to: %d", par);
+    
+    
+    
+    return 0;
+}
+
+
+
+
+  
+int Get_Parameter(int x, int y)
+{
+ 
+ return parameter[x][y];   
+}
+
+int parameter[6][3] =
+  {
+      {1, 2, 3},            //Parameter 1
+      {4, 5, 6},            //Parameter 2
+      {7, 8, 9},            //Parameter 3
+      {10, 11, 12},         //Parameter 4
+      {13, 14, 15},         //Parameter 5
+      {16, 17, 18},         //Parameter 6
+  };
