@@ -1,0 +1,42 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+typedef struct
+{
+    int liczba_1;
+    int liczba_2;
+}mojaStruktura_t, mojaStruktura1_t, mojaStruktura2_t;
+
+
+
+int main()
+{
+    mojaStruktura_t *ptr, testuj;
+    mojaStruktura1_t *ptr1, testuj1;
+    mojaStruktura2_t *ptr2, testuj2;
+    
+    ptr = &testuj;
+    ptr1 = &testuj1;
+    ptr2 = &testuj2;
+    
+    ptr->liczba_1 = 6;
+    ptr->liczba_2 = 8;
+    
+    ptr1->liczba_1 = 21;
+    ptr1->liczba_2 = 10;
+    
+    ptr2->liczba_1 = 35;
+    ptr2->liczba_2 = 45;
+    
+    
+    printf("mojaStruktura2_t:  %d", ptr2->liczba_2);
+
+    return 0;
+}
